@@ -1,6 +1,6 @@
 <template>
   <section
-    v-if="isLoading || randomPokemon.id == null"
+    v-if="isLoading || randomPokemon?.id == null"
     class="flex flex-col justify-center items-center w-screen h-screen"
   >
     <h1 class="text-3xl">Espere por favor</h1>

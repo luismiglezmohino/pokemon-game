@@ -55,11 +55,13 @@ export const usePokemonGame = () => {
   };
 
   onMounted(async () => {
+    console.log('onMounted');
     await new Promise((r) => setTimeout(r, 1000));
     pokemons.value = await getPokemons();
     //console.log(pokemons);
     getNextRound();
     console.log(pokemons, pokemonsOptions);
+    console.log('finish onMounted');
   });
 
   return {
